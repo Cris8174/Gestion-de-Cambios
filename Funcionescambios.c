@@ -49,7 +49,7 @@ void registrarSolicitud(Nodo **cabeza) {
     
     // Captura iterativa con verificación lógica del identificador único
     do {
-        printf("Codigo Unico del Cambio (ej. CHG-01): ");
+        printf("Codigo Unico del Cambio : ");
         leerCadena(c.codigo, sizeof(c.codigo));
         if (!validarCodigoUnico(*cabeza, c.codigo)) {
             printf(RED "Error: El codigo ya esta registrado.\n" RESET);
